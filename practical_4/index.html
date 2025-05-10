@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Highlight Text Example</title>
+  <style>
+    .highlight {
+      background-color: rgba(255, 255, 86, 0.666);
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Highlight Text Example</h1>
+
+  <!-- Button to trigger the highlight -->
+  <button id="highlightTextButton">Highlight Text</button>
+
+  <!-- Text to be highlighted -->
+  <p id="message">This is the original text. Click the button to highlight this text!</p>
+
+  <script>
+    // Event handler to highlight text when "Highlight Text" button is clicked
+    document.getElementById("highlightTextButton").addEventListener("click", function() {
+      const messageElement = document.getElementById("message");
+      messageElement.classList.toggle("highlight"); // Toggle highlight class
+    });
+  </script>
+</body>
+</html>
