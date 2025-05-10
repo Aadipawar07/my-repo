@@ -1,1 +1,32 @@
+Title : 3. JavaScript Functions: Create and invoke functions that perform specific tasks
+// 1. Named Function (Function Declaration)
+function greet() {
+    console.log("Hello from a Named Function!");
+  }
+  greet();
+  
+  
+  // 2. Anonymous Function (Function Expression)
+  const sayHello = function () {
+    console.log("Hello from an Anonymous Function!");
+  };
+  sayHello();
+  
+  
+  // 3. Arrow Function
+  const multiply = (a, b) => a * b;
+  console.log("Arrow Function Result (4 * 5):", multiply(4, 5));
+  
+  
+  // 4. Immediately Invoked Function Expression (IIFE)
+  (function () {
+    console.log("This message is from an IIFE (runs immediately)!");
+  })();
+  
+  
+  // 5. Function with Parameters and Return
+  function square(num) {
+    return num * num;
+  }
+  console.log("Square of 6 is:", square(6));
 
